@@ -1,0 +1,248 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    font-family: Arial, sans-serif;
+    max-width: 1700px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    background-color: #000033;
+    left: 0;
+    width: 1700px;
+    padding: 2px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo-left {
+    margin-left: 0px;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0px;
+    margin-left: 40px;
+    font-family: 'Gill Sans MT';
+}
+
+.nom_act {
+    padding: -30px;
+    font-size: 50px;
+
+}
+
+.desc_act,
+.fech_act,
+.file_act {
+    padding: -30px;
+}
+
+.info-box {
+    width: 50%;
+    padding: 20px;
+}
+
+p {
+    color: gray;
+    font-style: italic;
+}
+
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.toggle {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    z-index: 10;
+}
+
+.toggle span {
+    width: 2rem;
+    height: 0.25rem;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 8%;
+    height: 100vh;
+    background: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    height: 80%;
+}
+
+body {
+    transition: all 0.4s ease-in-out;
+}
+
+table {
+    width: 42%;
+    border-collapse: collapse;
+    height: 50%;
+    margin-left: -180px;
+    margin-top: 100px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #000033;
+    color: white;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+* {
+  -moz-box-sizing: inherit;
+       box-sizing: inherit;
+  -webkit-transition-property: all;
+          transition-property: all;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+
+
+.buttons {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+h1.heading {
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+}
+
+
+@media (min-width: 450px) {
+  h1.heading {
+    font-size: 1.75em;
+  }
+}
+@media (min-width: 760px) {
+  h1.heading {
+    font-size: 3.25em;
+  }
+}
+@media (min-width: 900px) {
+  h1.heading {
+    font-size: 4.25em;
+    margin: 0 0 0.5em;
+  }
+}
+ 
+.btnfos {
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  margin: 0 auto 2em;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (min-width: 400px) {
+  .btnfos {
+    display: inline-block;
+    margin-right: 2.5em;
+  }
+  .btnfos:nth-of-type(even) {
+    margin-right: 0;
+  }
+}
+@media (min-width: 600px) {
+  .btnfos:nth-of-type(even) {
+    margin-right: 2.5em;
+  }
+  .btnfos:nth-of-type(5) {
+    margin-right: 0;
+  }
+}
+
+.btnfos-1 {
+  background: #3498db;
+  font-weight: 100;
+}
+.btnfos-1 svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 45px;
+}
+.btnfos-1 rect {
+  fill: none;
+  stroke: #0091ff;
+  stroke-width: 1;
+  stroke-dasharray: 422, 0;
+}
+
+.btnfos-1:hover {
+  background: rgba(225, 51, 45, 0);
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.btnfos-1:hover rect {
+  stroke-width: 5;
+  stroke-dasharray: 15, 310;
+  stroke-dashoffset: 48;
+  -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
