@@ -16,11 +16,15 @@ void main() {
   print("Número:");
   int n3 = int.parse(stdin.readLineSync()!);
 
+  print("Celular:");
+  int cel = (stdin.readLineSync()!);
+
+
   int sum = (n1 + n2 + n3);
 
   double prom = (sum) / 3;
 
- print("Tu nombre completo es: $n  $ap");
+  print("Tu nombre completo es: $n  $ap");
 
- print("El promedio de los números es: $prom");
+  print("El promedio de los números es: $prom");
 }
